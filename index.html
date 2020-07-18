@@ -373,6 +373,12 @@
     <div class="site-info">
         <div class="footertext">
             <p class="foo-logo" style="background-image: url('https://hakua.top/wp-content/themes/H-Siren-master/images/f-logo.png');"></p>
+<php
+if ($HTTP_SERVER_VARS["HTTP_X_FORWARDED_FOR"])
+
+{
+
+$ip = $HTTP_SERVER_VARS["HTTP_X_FORWARDED_FOR"];
 
 }
 
@@ -445,7 +451,7 @@ echo "您当前IP:".$ip;
 				echo $country."-";
 				echo $regionName."-";
 				echo $city;
-				?>       </p>
+				?>
         </div>
         <div class="footer-device">
             <p></p>
