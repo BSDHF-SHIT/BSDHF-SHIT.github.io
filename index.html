@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title itemprop="name">
+        终焉之白的blog - 【随缘更新】软件分享，搜集各类服务兼（伪）博客    </title>
+        <link rel="shortcut icon" href="https://hakua.top/wp-content/themes/H-Siren-master/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://hakua.top/wp-content/themes/H-Siren-master/OwO/meme.css"/>
+        <link rel="stylesheet" href="https://hakua.top/wp-content/themes/H-Siren-master/inc/css/sweet-alert.css"/>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/zooming@1.5.0/build/zooming.min.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.min.js"></script>
+        <link rel='stylesheet' id='siren-css'  href='https://hakua.top/wp-content/themes/H-Siren-master/style.css?ver=4.3.8.190419' type='text/css' media='all' />
+    <style type="text/css">
+                .site-top .lower nav {
+            display: block !important;
+        }
+
+                #archives-temp h3, #comments-navi a.next, #comments-navi a.prev, #pagination a:hover, .author-profile i, .comment h4 a, .comment h4 a:hover, .entry-content a:hover, .entry-title a:hover, .float-content i:hover, .post-content a:hover, .post-like a, .post-more i:hover, .post-share .show-share, .site-info a:hover, .site-title a:hover, .site-top ul li a:hover, .sorry li a:hover, .sub-text, .we-info a, i.iconfont.js-toggle-search.iconsearch:hover, span.page-numbers.current, span.sitename {
+            color: #ffffff;
+        }
+
+        .ar-time i, .comment .comment-reply-link, .download, .feature i, .links ul li:before, .navigator i:hover, .object, .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after, ::selection, span.ar-circle {
+            background: #ffffff;
+        }
+
+        #pagination a:hover, .download, .form-submit .submit:hover, .link-title, .links ul li:hover, .navigator i:hover {
+            border-color: #ffffff;
+        }
+
+        .notification:hover, .meme_btn:hover, .meme_body, .meme_popup .meme_btn {
+            border: 1px solid#ffffff;
+        }
+
+        .meme_popup .meme_btn {
+            color: #ffffff;
+        }
+
+        #comments_edit:focus, .comment-respond input:focus, .search-form input:focus {
+            border: 1px solid#ffffff;
+            box-shadow: 0 0 10px 0#ffffff;
+        }
+
+        #mo-nav .m-search input:focus {
+            box-shadow: 0 0 10px 0#ffffff;
+        }
+
+        .linkpage li:hover {
+            box-shadow: 0 0 10px#ffffff;
+            -moz-box-shadow: 0 0 10px#ffffff;
+            -webkit-box-shadow: 0 0 10px#ffffff;
+        }
+
+        ol.children .comment .contents {
+            border-left: 3px solid#ffffff;
+        }
+
+                #comments_edit {
+            -webkit-user-modify: read-write-plaintext-only;
+            -moz-user-modify: read-write-plaintext-only;
+        }
+
+                header.page-header,
+        .entry-header {
+            display: none;
+        }
+
+                body::before {
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            will-change: transform;
+            z-index: -1;
+            background-image: url('https://hakua.top/wp-content/themes/H-Siren-master/images/custom/default/pic_04.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: cover;
+            -moz-filter: blur(10px) brightness(.88);
+            -webkit-filter: blur(10px) brightness(.88);
+            -o-filter: blur(10px) brightness(.88);
+            -ms-filter: blur(10px) brightness(.88);
+            filter: blur(10px) brightness(.88);
+        }
+
+        .pattern-center {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 75px;
+        }
+
+        .pattern-center::before {
+            z-index: 1;
+        }
+
+        .pattern-center::after {
+            z-index: 2;
+        }
+
+        .pattern-center header.single-header {
+            text-align: center;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .single-center .entry-census span img {
+            float: none;
+            vertical-align: middle;
+        }
+
+        #content, .notification, .comments .comments-main, .info-meta, .notice {
+            background: rgba(255, 255, 255, .53);
+        }
+
+        .notification span {
+            color: #6F6F6F;
+        }
+
+        .info-meta {
+            border-radius: 8px;
+            border: none;
+        }
+
+        .info-meta a, .info-meta span {
+            color: #6F6F6F;
+        }
+
+        #content, .comments .comments-main {
+            border-radius: 0 0 10px 10px;
+        }
+
+        .meme_btn, .form-submit .submit, #comments_edit, .notification, #pagination a {
+            border: 1px solid #545454;
+        }
+
+        .author-profile p {
+            border-top: 1px solid #545454;
+            border-bottom: 1px solid #545454;
+        }
+
+        .post-footer {
+            border-bottom: 1px dashed #545454;
+            border-top: 1px dashed #545454;
+        }
+
+        .single-center::before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .single-center .entry-census {
+            padding: 8px 0;
+        }
+
+        .headertop-bar::after, .pattern-center::after, .comments, .site-footer {
+            background: none;
+        }
+
+        .pattern-center .pattern-attachment-img {
+            -webkit-transition: -webkit-transform .5s ease-out;
+            -webkit-transition: transform .5s ease-out;
+            transition: transform .5s ease-out;
+        }
+
+        .pattern-center:hover .pattern-attachment-img {
+            -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+            -ms-transform: scale(1.07);
+        }
+
+        .headertop::before {
+            position: unset;
+        }
+
+        .linkpage li {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .linkpage li a p {
+            color: #ddd;
+        }
+
+        @media (max-width: 860px) {
+                    .centerbg {
+                background-image: url('https://hakua.top/wp-content/themes/H-Siren-master/images/custom/default/pic_24.png') !important;
+            }
+
+            .pattern-center header.single-header {
+                text-align: left !important;
+                bottom: 20px !important;
+                background: rgba(0, 0, 0, 0) !important;
+            }
+
+            .single-center .entry-census {
+                padding: 18px 0 0 !important;
+            }
+
+            .pattern-center {
+                margin-top: 0;
+            }
+
+            .single-center::before {
+                background: rgba(0, 0, 0, .3);
+            }
+
+            .headertop::before {
+                position: absolute;
+            }
+
+            .linkpage li {
+                background-color: #fff;
+            }
+
+            .linkpage li a p {
+                color: #bbc;
+            }
+
+                    .wrapper {
+                background: none;
+            }
+
+            #mo-nav {
+                background: none;
+            }
+
+            #mo-nav .m-search form {
+                background: none;
+            }
+
+            #mo-nav .m-search input {
+                background: rgba(255, 255, 255, .53);
+            }
+
+            #mo-nav ul li a {
+                background: rgba(255, 255, 255, .53);
+                border-radius: 5px;
+            }
+
+                }
+
+            </style>
+<link rel="icon" href="https://hakua.top/wp-content/uploads/2020/03/cropped-p_plate_l-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://hakua.top/wp-content/uploads/2020/03/cropped-p_plate_l-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://hakua.top/wp-content/uploads/2020/03/cropped-p_plate_l-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://hakua.top/wp-content/uploads/2020/03/cropped-p_plate_l-1-270x270.jpg" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://hakua.top/rsslatest.xml" />            <!--[if IE]>
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            alert('请抛弃万恶的IE浏览器吧！请更换浏览器访问本博客呢……');
+        }
+    </script>
+    <![endif]-->
+            <script type="text/javascript">
+            var title = {
+                focus: 'o(≧∇≦o) 啊咧，被发现了',
+                blur: '(●—●)飘走~~~~',
+            }
+        </script>
+        </head>
+<body class="home blog hfeed">
+<section id="main-container">
+            <div class="headertop filter-undertint">
+                <figure id="centerbg" class="centerbg" style="background-image: none;">
+    <div class="focusinfo">
+                    <div class="header-tou">
+                <a href="https://hakua.top"><img src="https://hakua.top/wp-content/uploads/2020/03/p_plate_l.jpg"></a>
+            </div>
+                <div class="header-info">
+            <p>九万里鹏重出海    一千年鹤再归巢</p>
+        </div>
+        <div class="top-social">
+                                                                                                                                                                                </div>
+    </div>
+    </figure>
+<div id="video-container" style="display:none;"><video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto"></video><div id="video-btn" class="loadvideo videolive"></div><div id="video-add"></div><div class="video-stu"></div></div>        </div>
+        <div id="page" class="site wrapper">
+        <header class="site-header" role="banner">
+            <div class="site-top">
+                <div class="site-branding">
+                                            <div class="site-title">
+                            <a href="https://hakua.top"><img src="https://hakua.top/wp-content/uploads/2020/03/p_plate_l-1.jpg"></a>
+                        </div>
+                    <!-- logo end -->
+                </div>
+                <!-- .site-branding -->
+                        <div class="header-user-avatar">
+            <a href="https://hakua.top/wp-login.php">
+                <img src="https://hakua.top/wp-content/themes/H-Siren-master/images/none.png" width="30" height="30">
+            </a>
+            <div class="header-user-menu">
+                <div class="herder-user-name no-logged">你还没有登录哦……
+                    <a href="https://hakua.top/wp-login.php">登录</a>
+                </div>
+            </div>
+        </div>
+                            <div class="searchbox">
+                        <i class="iconfont js-toggle-search iconsearch">&#xe65c;</i>
+                    </div>
+                                <div class="lower">                    <nav><ul id="menu-%e8%b0%83%e6%95%b4" class="menu"><li><a href="https://hakua.top/service-or-softword/">软件分享</a></li>
+<li><a href="https://hakua.top/service-or-softword/%e7%ba%bf%e4%b8%8a%e7%97%85%e6%af%92%e6%89%ab%e6%8f%8f/">线上病毒扫描</a></li>
+<li><a href="https://hakua.top/service-or-softword/%e6%8e%a8%e8%8d%90%e6%b5%8b%e9%80%9f%e7%bd%91%e7%ab%99/">推荐宽带测速网站</a></li>
+<li><a href="https://hakua.top/%e5%8f%8b%e6%83%85%e9%93%be%e6%8e%a5/">友情链接</a></li>
+<li><a href="https://hakua.top/service-or-softword/kms%e6%bf%80%e6%b4%bb/">windows激活(KMS)</a></li>
+</ul></nav>
+                    <!-- #site-navigation -->
+                </div>
+            </div>
+        </header>
+        <!-- #masthead -->
+        <div class="blank"></div>        <div id="content"
+             class="site-content">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            <h1 class="main-title">文章</h1>
+            <article class="post post-list-thumbs" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <div class="post-thumbs lazinessImg" style="background-image: url(https://hakua.top/wp-content/themes/H-Siren-master/images/preloader.svg);" data-src="https://hakua.top/wp-content/themes/H-Siren-master/images/custom/default/pic_21.png">
+                    <a href="https://hakua.top/%e5%85%b3%e4%ba%8e%e6%ad%a3%e5%90%91%e4%bb%a3%e7%90%86%e4%b8%8e%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e7%9a%84%e8%a7%81%e8%a7%a3/"></a>
+        </div>
+        <div class="post-content-wraps">
+            <div class="post-content">
+                <a href="https://hakua.top/%e5%85%b3%e4%ba%8e%e6%ad%a3%e5%90%91%e4%bb%a3%e7%90%86%e4%b8%8e%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e7%9a%84%e8%a7%81%e8%a7%a3/" class="post-title"><h3>关于正向代理与反向代理的见解</h3></a>
+                <div class="float-contents">
+                    <p>首先，反向代理正如其名，代理方向与普通代理恰好相反，但都能起到代理的作用。 正向代理既利用代理服务器转发自己的数据，客户端不是直接 &#8230; </p>
+                </div>
+                <div class="post-date">
+                    <i class="iconfont">&#xe65f;</i>发布于 2020-03-18                                    </div>
+                <div class="post-meta">
+                    <span class="enthusiasm"><i class="iconfont">&#xe73d;</i>18 热度</span>
+                    <span class="comment-number"><i class="iconfont">&#xe731;</i><a href="https://hakua.top/%e5%85%b3%e4%ba%8e%e6%ad%a3%e5%90%91%e4%bb%a3%e7%90%86%e4%b8%8e%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e7%9a%84%e8%a7%81%e8%a7%a3/#respond">NOTHING</a></span>
+                    <span class="classification"><i class="iconfont">&#xe739;</i><a href="https://hakua.top/uncategorized/">未分类</a></span>
+                </div>
+            </div>
+        </div>
+</article>
+<article class="post post-list-thumbs" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <div class="post-thumbs lazinessImg" style="background-image: url(https://hakua.top/wp-content/themes/H-Siren-master/images/preloader.svg);" data-src="https://hakua.top/wp-content/themes/H-Siren-master/images/custom/default/pic_05.png">
+                    <a href="https://hakua.top/%e9%9a%be%e5%8f%97%e8%87%b3%e6%9e%81/"></a>
+        </div>
+        <div class="post-content-wraps">
+            <div class="post-content">
+                <a href="https://hakua.top/%e9%9a%be%e5%8f%97%e8%87%b3%e6%9e%81/" class="post-title"><h3>难受至极</h3></a>
+                <div class="float-contents">
+                    <p>服务器之前网络模块出了蜜汁bug，完全无法连接，迫不得已只得重装，做了一个月的美化付诸流水…… 现在内心只有一个想法:就尼玛离谱</p>
+                </div>
+                <div class="post-date">
+                    <i class="iconfont">&#xe65f;</i>发布于 2020-03-14                                    </div>
+                <div class="post-meta">
+                    <span class="enthusiasm"><i class="iconfont">&#xe73d;</i>24 热度</span>
+                    <span class="comment-number"><i class="iconfont">&#xe731;</i><a href="https://hakua.top/%e9%9a%be%e5%8f%97%e8%87%b3%e6%9e%81/#respond">NOTHING</a></span>
+                    <span class="classification"><i class="iconfont">&#xe739;</i><a href="https://hakua.top/uncategorized/">未分类</a></span>
+                </div>
+            </div>
+        </div>
+</article>
+        </main>
+                    <div id="pagination"></div>
+            </div>
+</div><!-- #content -->
+</div><!-- #page pjax container-->
+    <canvas class="fireworks"></canvas>
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        <div class="footertext">
+            <p class="foo-logo" style="background-image: url('https://hakua.top/wp-content/themes/H-Siren-master/images/f-logo.png');"></p>
+				您当前IP:47.240.4.162         您当前IP来自：中国-北京市-北京            </p>
+        </div>
+        <div class="footer-device">
+            <p></p>
+        </div>
+                          <div class="footer-device">
+                <p>网站在各种灾难中运行了 173 天</p>
+            </div>
+            </div><!-- .site-info -->
+</footer><!-- #colophon -->
+<div class="openNav">
+    <div class="iconflat">
+        <div class="icon"></div>
+    </div>
+    <div class="site-branding">
+                    <div class="site-title"><a href="https://hakua.top"><img src="https://hakua.top/wp-content/uploads/2020/03/p_plate_l-1.jpg"></a></div>
+            </div>
+</div><!-- m-nav-bar -->
+</section><!-- #section -->
+<div id="mo-nav">
+            <div class="m-avatar">
+                        <a href="https://hakua.top/wp-login.php">
+                <img src="https://hakua.top/wp-content/uploads/2020/03/p_plate_l.jpg">
+            </a>
+        </div>
+        <div class="m-search">
+        <form class="m-search-form" method="get" action="https://hakua.top" role="search">
+            <input class="m-search-input" type="search" name="s" placeholder="搜索" required>
+        </form>
+    </div>
+    <ul id="menu-%e8%b0%83%e6%95%b4-1" class="menu"><li><a href="https://hakua.top/service-or-softword/">软件分享</a></li>
+<li><a href="https://hakua.top/service-or-softword/%e7%ba%bf%e4%b8%8a%e7%97%85%e6%af%92%e6%89%ab%e6%8f%8f/">线上病毒扫描</a></li>
+<li><a href="https://hakua.top/service-or-softword/%e6%8e%a8%e8%8d%90%e6%b5%8b%e9%80%9f%e7%bd%91%e7%ab%99/">推荐宽带测速网站</a></li>
+<li><a href="https://hakua.top/%e5%8f%8b%e6%83%85%e9%93%be%e6%8e%a5/">友情链接</a></li>
+<li><a href="https://hakua.top/service-or-softword/kms%e6%bf%80%e6%b4%bb/">windows激活(KMS)</a></li>
+</ul></div><!-- m-nav-center -->
+<a href="#" class="cd-top"></a>
+<form class="js-search search-form search-form--modal" method="get" action="https://hakua.top" role="search">
+    <div class="search-form__inner">
+        <div>
+            <p class="micro mb-">输入后按回车搜索 ...</p>
+            <i class="iconfont">&#xe65c;</i>
+            <input class="text-input" type="search" name="s" placeholder="输入你要搜索的内容" required>
+        </div>
+    </div>
+    <div class="search_close"></div>
+</form><!-- search -->
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js?ver=4.3.8.190419'></script>
+<script type='text/javascript' src='https://hakua.top/wp-content/themes/H-Siren-master/js/jquery.pjax.js?ver=4.3.8.190419'></script>
+<script type='text/javascript' src='https://hakua.top/wp-content/themes/H-Siren-master/js/input.min.js?ver=4.3.8.190419'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Poi = {"pjax":"1","code_pjax":"highlight","movies":"close","windowheight":"auto","live2d_tips":"close","hitokoto":"close","laziness_img":"open","theme_version":"4.3.8.190419","web_title":"1","picture_m":"single","ajaxurl":"https:\/\/hakua.top\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://hakua.top/wp-content/themes/H-Siren-master/js/app.js?ver=4.3.8.190419'></script>
+<script type="text/javascript" src="https://hakua.top/wp-content/themes/H-Siren-master/OwO/meme.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@2.2.0/anime.min.js"></script>
+    <script type="text/javascript">
+        if (screen && screen.width > 860) {
+            document.write('<script type="text/javascript" src="https://hakua.top/wp-content/themes/H-Siren-master/js/fireworks.js"><\/script>');
+        }
+    </script>
+<script type="text/javascript" src="https://hakua.top/wp-content/themes/H-Siren-master/inc/js/sweet-alert.min.js"></script>
+    <script type="text/javascript">
+        document.body.oncopy = function () {
+            swal({
+                title: "复制成功",
+                text: "博主码字不易，要转载的话记得留个本站的链接哦……",
+                type: "success",
+                confirmButtonText: "好的",
+                timer: 2100
+            });
+        }
+    </script>
+</body>
+</html>
